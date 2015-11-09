@@ -976,10 +976,34 @@ window.plugin.email.open({
 
 }
 
+function aprimail00 () {
+
+window.plugin.email.open({
+	to:      "info@ermesitalia.it",
+	subject: "info",
+	body:    "",
+	isHtml:  true
+});
+
+
+}
+
 function aprimail0 () {
 
 window.plugin.email.open({
-	to:      "info@cesmet.com",
+	to:      "mariola@bni-italia.it",
+	subject: "info",
+	body:    "",
+	isHtml:  true
+});
+
+
+}
+
+function aprimail0 () {
+
+window.plugin.email.open({
+	to:      "info@ermesitalia.it",
 	subject: "info",
 	body:    "",
 	isHtml:  true
@@ -999,11 +1023,11 @@ function mandasms () {
 	
 
 if(localStorage.getItem("Lingua")==2){
-			window.plugins.socialsharing.shareViaSMS("The Digital Business Card IBA 'Travel Clinic' is available at the link http://www.interactivebusinessapp.it/download/travel_clinic", "", function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})
+			window.plugins.socialsharing.shareViaSMS("The Digital Business Card IBA 'Travel Clinic' is available at the link http://www.interactivebusinessapp.it/download/p_mariola", "", function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})
 	}
 	else
 	{
-			window.plugins.socialsharing.shareViaSMS("La Digital Business Card IBA di 'Travel Clinic' e' disponibile al link http://www.interactivebusinessapp.it/download/travel_clinic", "", function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})
+			window.plugins.socialsharing.shareViaSMS("La Digital Business Card IBA di 'Travel Clinic' e' disponibile al link http://www.interactivebusinessapp.it/download/p_mariola", "", function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})
 	
 	}
 
