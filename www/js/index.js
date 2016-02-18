@@ -22,13 +22,13 @@ var app = {
     receivedEvent: function(id) {
 		
 		if(PushbotsPlugin.isiOS()){
-			PushbotsPlugin.initializeiOS("56257215177959a6258b4569");
+			PushbotsPlugin.initializeiOS("56c57d9f1779598a6a8b4567");
 		}
 		if(PushbotsPlugin.isAndroid()){
-			PushbotsPlugin.initializeAndroid("56257215177959a6258b4569", "994279687975");
+			PushbotsPlugin.initializeAndroid("56c57d9f1779598a6a8b4567", "994279687975");
 		}
 		
-		//var isPhone = screen.height < 800 || screen.width < 800;
+		//var isPhone = screen.height < 800 || screen.width < 800; 56257215177959a6258b4569
 		
 		var isMobileScreenWidth = (screen.width / window.devicePixelRatio)
 			

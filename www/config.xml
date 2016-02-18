@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
-		id        = "com.iba.bni"
-		versionCode="4.0"
-		version   = "4.0">
+		id        = "it.iba.finco"
+		versionCode="5.0"
+		version   = "5.0">
 		<name>P.Mariola</name>
 		<description>P.Mariola, Ermes Italia</description>
-		<author href="http://www.bni.com" email="info@bni.com">
-P.Mariola
+		<author href="http://www.ermesitalia.it" email="info@ermesitalia.it">
+		 P.Mariola
 		</author>
-		<preference name="phonegap-version" value="3.7.0" />
+		<preference name="phonegap-version" value="cli-5.2.0" />
 		<preference name="orientation" value="portrait" />
 		<preference name="fullscreen" value="true" />
 		<preference name="target-device" value="universal" />
@@ -38,7 +38,7 @@ P.Mariola
 		<preference name="BackgroundColor" value="#707070"/>
 		<preference name="KeepRunning" value="true"/>
 		<preference name="DisallowOverscroll" value="true"/>
-		<preference name="LoadingDialog" value="ErmesItalia,Loading"/> 
+		<preference name="LoadingDialog" value="Ermes Italia,Loading"/> 
 		<preference name="LoadUrlTimeoutValue" value="20000" />
 		<preference name="disable-cursor" value="true" />
 		<gap:platform name="android" />
@@ -47,24 +47,25 @@ P.Mariola
 		<feature name="http://api.phonegap.com/1.0/media"/>
 		<feature name="http://api.phonegap.com/1.0/network"/>
 		<feature name="http://api.phonegap.com/1.0/notification"/>
-		<gap:plugin name="org.apache.cordova.battery-status"  />
-		<gap:plugin name="org.apache.cordova.camera"  />
-		<gap:plugin name="org.apache.cordova.console"  />
-		<gap:plugin name="org.apache.cordova.contacts"  />
-		<gap:plugin name="org.apache.cordova.device"  />
-		<gap:plugin name="org.apache.cordova.device-orientation"  />
-		<gap:plugin name="org.apache.cordova.device-motion"  />
-		<gap:plugin name="org.apache.cordova.dialogs"  />
-		<gap:plugin name="org.apache.cordova.file"  />
-		<gap:plugin name="org.apache.cordova.file-transfer"  />
-		<gap:plugin name="org.apache.cordova.geolocation"  />
-		<gap:plugin name="org.apache.cordova.globalization"  />
-		<gap:plugin name="org.apache.cordova.inappbrowser"  />
-		<gap:plugin name="org.apache.cordova.media"  />
-		<gap:plugin name="org.apache.cordova.media-capture"  />
-		<gap:plugin name="org.apache.cordova.network-information"  />
-		<gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
-		<gap:plugin name="org.apache.cordova.vibration"  />
+		<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+		<gap:plugin name="org.apache.cordova.battery-status" source="npm"  />
+		<gap:plugin name="org.apache.cordova.camera"  source="npm"/>
+		<gap:plugin name="org.apache.cordova.console"  source="npm" />
+		<gap:plugin name="org.apache.cordova.contacts" source="npm" />
+		<gap:plugin name="org.apache.cordova.device" source="npm" />
+		<gap:plugin name="org.apache.cordova.device-orientation" source="npm" />
+		<gap:plugin name="org.apache.cordova.device-motion" source="npm" />
+		<gap:plugin name="org.apache.cordova.dialogs" source="npm" />
+		<gap:plugin name="org.apache.cordova.file" source="npm" />
+		<gap:plugin name="org.apache.cordova.file-transfer" source="npm"  />
+		<gap:plugin name="org.apache.cordova.geolocation" source="npm" />
+		<gap:plugin name="org.apache.cordova.globalization" source="npm" />
+		<gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />
+		<gap:plugin name="org.apache.cordova.media" source="npm" />
+		<gap:plugin name="org.apache.cordova.media-capture" source="npm" />
+		<gap:plugin name="org.apache.cordova.network-information" source="npm" />
+		<gap:plugin name="org.apache.cordova.splashscreen" source="npm" version="0.3.4" />
+		<gap:plugin name="org.apache.cordova.vibration" source="npm" />
 		<icon src="res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57" />
 		<icon src="res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
 		<icon src="res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114" />
@@ -103,8 +104,9 @@ P.Mariola
 		<access origin="http://gstatic.com" subdomains="true"  />
 		<access origin="https://gstatic.com" subdomains="true"  />
 		<access origin="http://googleapis.com" subdomains="true"  />
-		<gap:plugin name="de.appplant.cordova.plugin.email-composer"  />
-		<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
-		<gap:plugin name="pushbots-cordova-plugin" source="npm" />
+		<gap:plugin name="de.appplant.cordova.plugin.email-composer" source="pgb"  />
+		<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" source="pgb" />
+		<gap:plugin name="pushbots-cordova-plugin" source="npm" version="1.2.8" />
+		<gap:plugin name="com.dawsonloudon.videoplayer" version="1.0.0" source="pgb" />
 
 	</widget>
